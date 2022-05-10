@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --black: #130f40;
+    --orange: #ff7800;
+    --light: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --outline: .1rem solid rgba(0, 0, 0, .1);
+    --outline-hover: .2rem solid var(--black);
+
+
+
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .3s linear;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    -webkit-transition: .2s linear;
+    -webkit-box-sizing: border-box;
+}
+
+
+html{
+    /* mặc định 100% là 16px nên 62.5% = 10px */
+    /* để chủ yếu sử dung rem 1 rem giờ bằng 10 px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #10221b;
+}
+
+body {
+    background-color: #eee;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    color: #fff;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.heading span {
+    background-color: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: .5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
